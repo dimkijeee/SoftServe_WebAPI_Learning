@@ -11,15 +11,15 @@ namespace WebAPI_Project.Controllers
     [Route("api/[controller]")]
     public class ValuesController : ControllerBase
     {
-        // GET: api/<controller>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        //// GET: api/<controller>
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
 
         // GET api/<controller>/5
-        [HttpGet("{id}")]
+        [HttpGet("{id?}")]
         public string Get(int id)
         {
             return $"value {id}";
